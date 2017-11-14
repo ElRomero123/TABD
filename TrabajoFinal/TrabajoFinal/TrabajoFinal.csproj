@@ -84,9 +84,49 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FormularioArticulo.aspx" />
+    <Content Include="FormularioComportamiento.aspx" />
+    <Content Include="FormularioCompra.aspx" />
+    <Content Include="FormularioHistorial.aspx" />
+    <Content Include="FormularioLogin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioArticulo.aspx.cs">
+      <DependentUpon>FormularioArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioArticulo.aspx.designer.cs">
+      <DependentUpon>FormularioArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioComportamiento.aspx.cs">
+      <DependentUpon>FormularioComportamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioComportamiento.aspx.designer.cs">
+      <DependentUpon>FormularioComportamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCompra.aspx.cs">
+      <DependentUpon>FormularioCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioCompra.aspx.designer.cs">
+      <DependentUpon>FormularioCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioHistorial.aspx.cs">
+      <DependentUpon>FormularioHistorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioHistorial.aspx.designer.cs">
+      <DependentUpon>FormularioHistorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioLogin.aspx.cs">
+      <DependentUpon>FormularioLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioLogin.aspx.designer.cs">
+      <DependentUpon>FormularioLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
