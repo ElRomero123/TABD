@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controladora", "Controlador
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{AF0ED3D7-70F5-4814-86E6-FED4EDFA0DF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Broker", "Broker\Broker.csproj", "{04C17216-B9F9-4BD9-A516-CC6474A7EE76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Broker", "Broker\Broker.csproj", "{1832DB27-8D80-4D9C-8838-6AF9A3640245}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{AF0ED3D7-70F5-4814-86E6-FED4EDFA0DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF0ED3D7-70F5-4814-86E6-FED4EDFA0DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF0ED3D7-70F5-4814-86E6-FED4EDFA0DF3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04C17216-B9F9-4BD9-A516-CC6474A7EE76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04C17216-B9F9-4BD9-A516-CC6474A7EE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04C17216-B9F9-4BD9-A516-CC6474A7EE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04C17216-B9F9-4BD9-A516-CC6474A7EE76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1832DB27-8D80-4D9C-8838-6AF9A3640245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1832DB27-8D80-4D9C-8838-6AF9A3640245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1832DB27-8D80-4D9C-8838-6AF9A3640245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1832DB27-8D80-4D9C-8838-6AF9A3640245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

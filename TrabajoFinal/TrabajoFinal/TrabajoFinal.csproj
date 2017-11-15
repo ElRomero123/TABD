@@ -134,6 +134,10 @@
       <Project>{26dc011d-6cd6-4082-87c9-95fdb1035a85}</Project>
       <Name>Controladora</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{af0ed3d7-70f5-4814-86e6-fed4edfa0df3}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

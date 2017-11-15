@@ -26,7 +26,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CANTIDAD" Type="bigint" />
           <Property Name="TOTAL" Type="bigint" />
           <Property Name="IDVENTA" Type="bigint" Nullable="false" />
@@ -216,7 +216,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CANTIDAD" Type="Int64" />
           <Property Name="TOTAL" Type="Int64" />
           <Property Name="IDVENTA" Type="Int64" Nullable="false" />
