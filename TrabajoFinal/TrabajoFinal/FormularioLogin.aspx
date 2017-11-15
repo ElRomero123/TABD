@@ -50,6 +50,10 @@
                                 <asp:Button ID="BotonHistorial" runat="server" Text="Ver historial de compra" CssClass="btn btn-danger" OnClick="BotonHistorial_Click"/>
                                 <asp:Button ID="BotonComportamiento" runat="server" Text="Ver comportamiento de usuarios" CssClass="btn btn-danger" OnClick="BotonComportamiento_Click"/> 
                         </div>
+
+                        <div class="form-group">
+                                <asp:Label ID="EtiquetaConfirmacion" runat="server"></asp:Label>
+                        </div>
               </div>
     </form>
 </body>

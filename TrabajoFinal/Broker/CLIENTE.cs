@@ -24,6 +24,7 @@ namespace Broker
         public long ID { get; set; }
         public string NOMBRE { get; set; }
         public string DIRECCION { get; set; }
+        public string CONTRASENA { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TELEFONO> TELEFONOes { get; set; }

@@ -16,12 +16,31 @@ namespace TrabajoFinal
 
         protected void BotonValidar_Click(object sender, EventArgs e)
         {
+            long.TryParse(CampoID.Text, out long ID);
+            string Password = CampoPassword.Text;
+            bool request;
+            Controladora.Cliente controladora = new Controladora.Cliente();
 
+       
+            request = controladora.Validar(ID, Password);
+
+            if(request)
+            {
+                Response.Redirect("FormularioCompra.aspx");
+            }
+
+            else
+            {
+                EtiquetaConfirmacion.Text = "No se puede iniciar. Credenciales invalidas.";
+                EtiquetaConfirmacion.CssClass = "alert-danger";
+            }
+          
         }
         protected void BotonLimpiar_Click(object sender, EventArgs e)
         {
             CampoID.Text = "";
             CampoPassword.Text = "";
+            EtiquetaConfirmacion.Text = "";
         }
 
         protected void BotonArticulo_Click(object sender, EventArgs e)
