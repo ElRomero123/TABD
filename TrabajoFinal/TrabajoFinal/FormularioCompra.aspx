@@ -58,8 +58,8 @@
                     </div>
 
                     <div class="form-group">
-                                <asp:Button ID="BotonArticulo" runat="server" Text="Ver artículos disponibles" CssClass="btn btn-danger" OnClick="BotonArticulo_Click"/>
-                                <asp:Button ID="BotonComportamiento" runat="server" Text="Ver comportamiento de usuarios" CssClass="btn btn-danger" OnClick="BotonComportamiento_Click"/>
+                            <asp:Button ID="BotonArticulo" runat="server" Text="Ver artículos disponibles" CssClass="btn btn-danger" OnClick="BotonArticulo_Click"/>
+                            <asp:Button ID="BotonComportamiento" runat="server" Text="Ver comportamiento de usuarios" CssClass="btn btn-danger" OnClick="BotonComportamiento_Click"/>
                     </div>
 
             </div>

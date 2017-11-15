@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E52290C6-20AB-4563-8F6F-2639ABAA5C50}</ProjectGuid>
+    <ProjectGuid>{3FE52D68-2C72-44B7-BE9F-235659BE6534}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Broker</RootNamespace>
@@ -39,6 +39,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,11 +49,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CATEGORIA.cs">
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENTE.cs">
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DETALLE.cs">
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloVentasOnline.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloVentasOnline.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloVentasOnline.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloVentasOnline.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloVentasOnline.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTO.cs">
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PROVEEDOR.cs">
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TELEFONO.cs">
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VENTA.cs">
+      <DependentUpon>ModeloVentasOnline.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <EntityDeploy Include="ModeloVentasOnline.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloVentasOnline.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="ModeloVentasOnline.edmx.diagram">
+      <DependentUpon>ModeloVentasOnline.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModeloVentasOnline.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModeloVentasOnline.Context.cs</LastGenOutput>
+      <DependentUpon>ModeloVentasOnline.edmx</DependentUpon>
+    </Content>
+    <Content Include="ModeloVentasOnline.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloVentasOnline.edmx</DependentUpon>
+      <LastGenOutput>ModeloVentasOnline.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

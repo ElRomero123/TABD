@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1e5dc940627142cfbb8b654095601f68" Name="Diagram1">
+        <EntityTypeShape EntityType="BDVentasOnlineModel.CATEGORIA" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVentasOnlineModel.CLIENTE" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVentasOnlineModel.DETALLE" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVentasOnlineModel.PRODUCTO" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVentasOnlineModel.PROVEEDOR" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVentasOnlineModel.TELEFONO" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVentasOnlineModel.VENTA" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="BDVentasOnlineModel.FK_PRODUCTO_CATEGORIA" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVentasOnlineModel.FK_TELEFONO_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVentasOnlineModel.FK_VENTA_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVentasOnlineModel.FK_DETALLE_PRODUCTO" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVentasOnlineModel.FK_DETALLE_VENTA" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVentasOnlineModel.FK_PRODUCTO_PROVEEDOR" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
