@@ -40,20 +40,24 @@ namespace Controladora
             try
             {
                 var resultado = from c in db.VENTAs
+                                join e in db.CLIENTEs
+                                on c.IDCLIENTE equals e.ID
                                 where (c.ID == ID || ID == -1)
-                                select new { c.ID, c.FECHA, c.DESCUENTO, c.IDCLIENTE };
+                                select new {c.ID, c.FECHA, c.DESCUENTO, c.IDCLIENTE, e.NOMBRE};
 
                 foreach (var item in resultado)
                 {
-                    Entidades.Venta Venta = new Entidades.Venta
+
+                    Entidades.Venta venta = new Entidades.Venta
                     {
-                        ID        = item.ID,
-                        FECHA     = item.FECHA,
+                        ID = item.ID,
+                        FECHA = item.FECHA,
                         DESCUENTO = double.Parse(item.DESCUENTO.ToString()),
                         IDCLIENTE = item.IDCLIENTE,
+                        CLIENTE = item.NOMBRE
                     };
 
-                    lista.Add(Venta);
+                    lista.Add(venta);
                 }
             }
             catch

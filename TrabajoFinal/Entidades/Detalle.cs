@@ -13,5 +13,6 @@ namespace Entidades
         public long TOTAL { get; set; }
         public long IDVENTA { get; set; }
         public long IDPRODUCTO { get; set; }
+        public string ARTICULO { get; set; }
     }
 }

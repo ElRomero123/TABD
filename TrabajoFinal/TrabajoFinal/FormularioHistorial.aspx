@@ -55,6 +55,7 @@
                                             <asp:BoundField DataField="ID" HeaderText="Id" />
                                             <asp:BoundField DataField="FECHA" HeaderText="Fecha" />
                                             <asp:BoundField DataField="DESCUENTO" HeaderText="Descuento" />
+                                            <asp:BoundField DataField="CLIENTE" HeaderText="Nombre cliente" />
                                         </Columns>
 
                                         <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
@@ -82,6 +83,7 @@
                                             <asp:BoundField DataField="CANTIDAD" HeaderText="Cantidad" />
                                             <asp:BoundField DataField="TOTAL" HeaderText="Total" />
                                             <asp:BoundField DataField="IDPRODUCTO" HeaderText="IdProducto" />
+                                            <asp:BoundField DataField="ARTICULO" HeaderText="Producto" />
                                         </Columns>
 
                                         <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />

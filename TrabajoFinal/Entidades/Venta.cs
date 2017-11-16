@@ -13,5 +13,6 @@ namespace Entidades
         public string FECHA { get; set; }
         public double DESCUENTO { get; set; }
         public long IDCLIENTE { get; set; }
+        public string CLIENTE { get; set; }
     }
 }

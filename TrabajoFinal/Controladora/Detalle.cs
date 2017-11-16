@@ -39,8 +39,10 @@ namespace Controladora
             try
             {
                 var resultado = from c in db.DETALLEs
+                                join e in db.PRODUCTOes
+                                on c.IDPRODUCTO equals e.ID
                                 where (c.IDVENTA == ID)
-                                select new {c.ID, c.CANTIDAD, c.TOTAL, c.IDVENTA, c.IDPRODUCTO};
+                                select new {c.ID, c.CANTIDAD, c.TOTAL, c.IDVENTA, c.IDPRODUCTO, e.NOMBRE};
 
                 foreach (var item in resultado)
                 {
@@ -50,7 +52,8 @@ namespace Controladora
                         CANTIDAD = long.Parse(item.CANTIDAD.ToString()),
                         TOTAL = long.Parse(item.TOTAL.ToString()),
                         IDVENTA = item.IDVENTA,
-                        IDPRODUCTO = item.IDPRODUCTO
+                        IDPRODUCTO = item.IDPRODUCTO,
+                        ARTICULO = item.NOMBRE 
                     };
 
                     lista.Add(Detalle);
