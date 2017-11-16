@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulo.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Detalle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

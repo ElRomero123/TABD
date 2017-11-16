@@ -94,6 +94,33 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTotal;
         
         /// <summary>
+        /// Control Etiqueta4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Etiqueta4;
+        
+        /// <summary>
+        /// Control CampoIDCliente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CampoIDCliente;
+        
+        /// <summary>
+        /// Control rfvIDCliente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvIDCliente;
+        
+        /// <summary>
         /// Control BotonMismaFactura.
         /// </summary>
         /// <remarks>
@@ -103,13 +130,13 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.Button BotonMismaFactura;
         
         /// <summary>
-        /// Control Etiqueta4.
+        /// Control Etiqueta5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta4;
+        protected global::System.Web.UI.WebControls.Label Etiqueta5;
         
         /// <summary>
         /// Control CampoIDVenta1.
@@ -139,13 +166,13 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.Button BotonNuevaFactura;
         
         /// <summary>
-        /// Control Etiqueta5.
+        /// Control Etiqueta6.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta5;
+        protected global::System.Web.UI.WebControls.Label Etiqueta6;
         
         /// <summary>
         /// Control CampoIDVenta2.
@@ -175,13 +202,13 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.Label EtiquetaConfirmacion;
         
         /// <summary>
-        /// Control Etiqueta6.
+        /// Control Etiqueta7.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta6;
+        protected global::System.Web.UI.WebControls.Label Etiqueta7;
         
         /// <summary>
         /// Control BotonArticulo.

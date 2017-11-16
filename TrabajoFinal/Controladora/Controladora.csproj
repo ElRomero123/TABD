@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulo.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Detalle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Broker\Broker.csproj">
-      <Project>{1832db27-8d80-4d9c-8838-6af9a3640245}</Project>
+      <Project>{0a651c54-3859-46bc-9d97-6ff41fdb2282}</Project>
       <Name>Broker</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">

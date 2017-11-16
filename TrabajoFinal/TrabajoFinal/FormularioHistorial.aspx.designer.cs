@@ -40,67 +40,22 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvID;
         
         /// <summary>
-        /// Control Etiqueta2.
+        /// Control BotonBuscarVenta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta2;
+        protected global::System.Web.UI.WebControls.Button BotonBuscarVenta;
         
         /// <summary>
-        /// Control EtiquetaFecha.
+        /// Control BotonBuscarDetalle.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label EtiquetaFecha;
-        
-        /// <summary>
-        /// Control Etiqueta3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta3;
-        
-        /// <summary>
-        /// Control EtiquetaIDCliente.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label EtiquetaIDCliente;
-        
-        /// <summary>
-        /// Control Etiqueta4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta4;
-        
-        /// <summary>
-        /// Control EtiquetaNombre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label EtiquetaNombre;
-        
-        /// <summary>
-        /// Control BotonBuscar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BotonBuscar;
+        protected global::System.Web.UI.WebControls.Button BotonBuscarDetalle;
         
         /// <summary>
         /// Control BotonLimpiar.
@@ -112,12 +67,48 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.Button BotonLimpiar;
         
         /// <summary>
-        /// Control Etiqueta5.
+        /// Control Etiqueta3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta5;
+        protected global::System.Web.UI.WebControls.Label Etiqueta3;
+        
+        /// <summary>
+        /// Control EtiquetaHistorialVenta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EtiquetaHistorialVenta;
+        
+        /// <summary>
+        /// Control gdvHistorialVenta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvHistorialVenta;
+        
+        /// <summary>
+        /// Control EtiquetaHistorialDetalle.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EtiquetaHistorialDetalle;
+        
+        /// <summary>
+        /// Control gdvHistorialDetalle.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvHistorialDetalle;
     }
 }

@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TrabajoFinal
 {
@@ -16,17 +12,20 @@ namespace TrabajoFinal
 
         protected void BotonBuscar_Click(object sender, EventArgs e)
         {
-
+            long.TryParse(CampoIDProducto.Text, out long ID);
+                ;
+            Controladora.Articulo controladora = new Controladora.Articulo();
+            List<Entidades.Articulo> lista = controladora.BuscarArticulo(ID);
+            EtiquetaInformacionArticulos.Text = "Artículos encontrados.";
+            gdvArticulos.DataSource = lista;
+            gdvArticulos.DataBind();
         }
 
         protected void BotonLimpiar_Click(object sender, EventArgs e)
         {
-            CampoIDProducto.Text = "";
-            EtiquetaNombre.Text = "";
-            EtiquetaPrecio.Text = "";
-            EtiquetaStock.Text = "";
-            EtiquetaIDProveedor.Text = "";
-            EtiquetaIDCategoria.Text = ""; 
+            EtiquetaInformacionArticulos.Text = "";
+            gdvArticulos.DataSource = null;
+            gdvArticulos.DataBind();
         }
     }
 }

@@ -1,4 +1,9 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Controladora
 {
     public class Venta
@@ -26,6 +31,36 @@ namespace Controladora
 
             }
             return resultado;
+        }
+
+        public List<Entidades.Venta> BuscarVenta(long ID)
+        {
+            List<Entidades.Venta> lista = new List<Entidades.Venta>();
+
+            try
+            {
+                var resultado = from c in db.VENTAs
+                                where (c.ID == ID || ID == -1)
+                                select new { c.ID, c.FECHA, c.DESCUENTO, c.IDCLIENTE };
+
+                foreach (var item in resultado)
+                {
+                    Entidades.Venta Venta = new Entidades.Venta
+                    {
+                        ID        = item.ID,
+                        FECHA     = item.FECHA,
+                        DESCUENTO = double.Parse(item.DESCUENTO.ToString()),
+                        IDCLIENTE = item.IDCLIENTE,
+                    };
+
+                    lista.Add(Venta);
+                }
+            }
+            catch
+            {
+
+            }
+            return lista;
         }
     }
 }

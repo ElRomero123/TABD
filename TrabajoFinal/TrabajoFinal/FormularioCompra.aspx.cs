@@ -45,9 +45,9 @@ namespace TrabajoFinal
             Entidades.Venta entidadVenta = new Entidades.Venta
             {
                 ID = long.Parse(CampoIDVenta2.Text),
-                FECHA = DateTime.Now.ToLongDateString() + DateTime.Now.ToLongTimeString(),
+                FECHA = DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString(),
                 DESCUENTO = 0,
-                IDCLIENTE = 287960
+                IDCLIENTE = long.Parse(CampoIDCliente.Text)
             };
 
             resultado = controladora.CrearVenta(entidadVenta);

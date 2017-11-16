@@ -43,15 +43,21 @@
                     </div>
 
                     <div class="form-group">
-                            <asp:Button ID="BotonMismaFactura" runat="server" Text="Comprar en la misma factura" CssClass="btn btn-primary" OnClick="BotonMismaFactura_Click"/>
+                            <asp:Label ID="Etiqueta4" runat="server" Text="Vuelva a suministrar su ID: "></asp:Label>
+                            <asp:TextBox ID="CampoIDCliente" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="rfvIDCliente" runat="server" ErrorMessage="Campo necesario!" ForeColor="Red" ControlToValidate="CampoIDCliente" ValidationGroup="Admin"></asp:RequiredFieldValidator>
+                    </div>
 
-                            <asp:Label ID="Etiqueta4" runat="server" Text="ID venta: "></asp:Label>
+                    <div class="form-group">
+                            <asp:Button ID="BotonMismaFactura" runat="server" Text="Comprar con factura" CssClass="btn btn-primary" OnClick="BotonMismaFactura_Click"/>
+
+                            <asp:Label ID="Etiqueta5" runat="server" Text="ID venta: "></asp:Label>
                             <asp:TextBox ID="CampoIDVenta1" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvIDVenta1" runat="server" ErrorMessage="Campo necesario!" ForeColor="Red" ControlToValidate="CampoIDVenta1" ValidationGroup="Admin"></asp:RequiredFieldValidator>
 
                             <asp:Button ID="BotonNuevaFactura" runat="server" Text="Generar nueva factura" CssClass="btn btn-primary" OnClick="BotonNuevaFactura_Click"/>
                             
-                            <asp:Label ID="Etiqueta5" runat="server" Text="ID venta: "></asp:Label>
+                            <asp:Label ID="Etiqueta6" runat="server" Text="ID venta: "></asp:Label>
                             <asp:TextBox ID="CampoIDVenta2" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvIDVenta2" runat="server" ErrorMessage="Campo necesario!" ForeColor="Red" ControlToValidate="CampoIDVenta2" ValidationGroup="Admin"></asp:RequiredFieldValidator>
                     </div>
@@ -61,7 +67,7 @@
                     </div>
 
                     <div class="form-group">
-                            <asp:Label ID="Etiqueta6" runat="server" Text="Otras opciones: "></asp:Label>
+                            <asp:Label ID="Etiqueta7" runat="server" Text="Otras opciones: "></asp:Label>
                     </div>
 
                     <div class="form-group">

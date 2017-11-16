@@ -8,13 +8,13 @@
     <title>Artículos disponibles</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 
 </head>
 <body>
@@ -31,32 +31,6 @@
                         </div>
 
                         <div class="form-group">
-                               <asp:Label ID="Etiqueta2" runat="server" Text="Nombre: "></asp:Label>
-                               <asp:Label ID="EtiquetaNombre" runat="server"></asp:Label>
-                        </div>
-
-                        <div class="form-group">
-                               <asp:Label ID="Etiqueta3" runat="server" Text="Precio: "></asp:Label>
-                               <asp:Label ID="EtiquetaPrecio" runat="server"></asp:Label>
-
-                        </div>
-
-                        <div class="form-group">
-                               <asp:Label ID="Etiqueta4" runat="server" Text="Stock: "></asp:Label>
-                               <asp:Label ID="EtiquetaStock" runat="server"></asp:Label>
-                        </div>
-
-                        <div class="form-group">
-                               <asp:Label ID="Etiqueta5" runat="server" Text="ID proveedor: "></asp:Label>
-                               <asp:Label ID="EtiquetaIDProveedor" runat="server"></asp:Label>
-                        </div>
-
-                        <div class="form-group">
-                               <asp:Label ID="Etiqueta6" runat="server" Text="ID categoría: "></asp:Label>
-                               <asp:Label ID="EtiquetaIDCategoria" runat="server"></asp:Label>
-                        </div>
-
-                        <div class="form-group">
                                 <asp:Button ID="BotonBuscar" runat="server" Text="Buscar artículo" CssClass="btn btn-primary" OnClick="BotonBuscar_Click"/>
                                 <asp:Button ID="BotonLimpiar" runat="server" Text="Limpiar" CssClass="btn btn-danger" OnClick="BotonLimpiar_Click"/>
                         </div>
@@ -65,6 +39,34 @@
                                <asp:Label ID="Etiqueta7" runat="server" Text="Puede buscar un artículo con su ID, si quiere ver todo introduzca ID=-1."></asp:Label>
                         </div>
 
+
+                        <div class="form-group">
+
+                                    <asp:Label ID="EtiquetaInformacionArticulos" runat="server"></asp:Label>
+                                            
+                                    <asp:GridView ID="gdvArticulos" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+                                                
+                                        <Columns>  
+                                            <asp:BoundField DataField="ID" HeaderText="Id" />
+                                            <asp:BoundField DataField="NOMBRE" HeaderText="Nombre" />
+                                            <asp:BoundField DataField="PRECIO" HeaderText="Precio" />
+                                            <asp:BoundField DataField="STOCK" HeaderText="Stock" />
+                                            <asp:BoundField DataField="IDCATEGORIA" HeaderText="ID categoría" />
+                                        </Columns>
+
+                                        <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
+                                        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
+                                        <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
+                                        <RowStyle BackColor="White" ForeColor="#330099" />
+                                        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+                                        <SortedAscendingCellStyle BackColor="#FEFCEB" />
+                                        <SortedAscendingHeaderStyle BackColor="#AF0101" />
+                                        <SortedDescendingCellStyle BackColor="#F6F0C0" />
+                                        <SortedDescendingHeaderStyle BackColor="#7E0000" />
+
+                                    </asp:GridView>
+
+                        </div>
             </div>
 
     </form>
