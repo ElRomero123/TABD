@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TrabajoFinal
 {
@@ -16,12 +12,34 @@ namespace TrabajoFinal
 
         protected void BotonBuscarUsuario_Click(object sender, EventArgs e)
         {
+            Controladora.Cliente controladora = new Controladora.Cliente();
+            List<Entidades.Cliente> lista = controladora.BuscarCliente(-1);
 
+            EtiquetaInformacionClientes.Text = "Clientes encontrados.";
+            gdvClientes.DataSource = lista;
+            gdvClientes.DataBind();
         }
 
         protected void BotonBuscarComportamiento_Click(object sender, EventArgs e)
         {
+            Controladora.MongoBD controladora = new Controladora.MongoBD();
+            string[] resultado = controladora.ConsultarComentarios(double.Parse(CampoID.Text));
 
+            EtiquetaNombre.Text = resultado[0] + " " + resultado[1];
+            EtiquetaComentarios.Text = resultado[2];
+            EtiquetaDeseos.Text = resultado[3];
+            EtiquetaBusquedas.Text = resultado[4];
+        }
+
+        protected void BotonLimpiar_Click(object sender, EventArgs e)
+        {
+            EtiquetaNombre.Text = "";
+            EtiquetaComentarios.Text = "";
+            EtiquetaDeseos.Text = "";
+            EtiquetaBusquedas.Text = "";
+            EtiquetaInformacionClientes.Text = "";
+            gdvClientes.DataSource = null;
+            gdvClientes.DataBind();
         }
     }
 }

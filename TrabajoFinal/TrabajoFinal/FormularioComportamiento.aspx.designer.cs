@@ -40,6 +40,33 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvID;
         
         /// <summary>
+        /// Control BotonBuscarUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BotonBuscarUsuario;
+        
+        /// <summary>
+        /// Control BotonBuscarComportamiento.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BotonBuscarComportamiento;
+        
+        /// <summary>
+        /// Control BotonLimpiar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BotonLimpiar;
+        
+        /// <summary>
         /// Control Etiqueta2.
         /// </summary>
         /// <remarks>
@@ -58,21 +85,75 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.Label EtiquetaNombre;
         
         /// <summary>
-        /// Control BotonBuscarUsuario.
+        /// Control Etiqueta3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BotonBuscarUsuario;
+        protected global::System.Web.UI.WebControls.Label Etiqueta3;
         
         /// <summary>
-        /// Control BotonBuscarComportamiento.
+        /// Control EtiquetaComentarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BotonBuscarComportamiento;
+        protected global::System.Web.UI.WebControls.Label EtiquetaComentarios;
+        
+        /// <summary>
+        /// Control Etiqueta4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Etiqueta4;
+        
+        /// <summary>
+        /// Control EtiquetaDeseos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EtiquetaDeseos;
+        
+        /// <summary>
+        /// Control Etiqueta5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Etiqueta5;
+        
+        /// <summary>
+        /// Control EtiquetaBusquedas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EtiquetaBusquedas;
+        
+        /// <summary>
+        /// Control EtiquetaInformacionClientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EtiquetaInformacionClientes;
+        
+        /// <summary>
+        /// Control gdvClientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvClientes;
     }
 }

@@ -35,5 +35,33 @@ namespace Controladora
           
             return answer;
         }
+
+        public List<Entidades.Cliente> BuscarCliente(long ID)
+        {
+            List<Entidades.Cliente> lista = new List<Entidades.Cliente>();
+
+            try
+            {
+                var resultado = from c in db.CLIENTEs
+                                where (ID == -1)
+                                select new { c.ID, c.NOMBRE };
+
+                foreach (var item in resultado)
+                {
+                    Entidades.Cliente cliente = new Entidades.Cliente
+                    {
+                        ID = item.ID,
+                        NOMBRE = item.NOMBRE,
+                    };
+
+                    lista.Add(cliente);
+                }
+            }
+            catch
+            {
+
+            }
+            return lista;
+        }
     }
 }
