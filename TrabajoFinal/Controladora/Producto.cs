@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DA = Broker;
 
 namespace Controladora
 {
@@ -40,6 +41,21 @@ namespace Controladora
 
             }
             return lista;
+        }
+
+        public bool ActualizarStock(int cantidad, long ID)
+        {
+            DA.PRODUCTO producto= db.PRODUCTOes.FirstOrDefault(x => x.ID == ID);
+            var stock = int.Parse(producto.STOCK);
+            var resultado = stock - cantidad;
+
+            if(resultado >= 0)
+            {
+                producto.STOCK = resultado.ToString();
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }
