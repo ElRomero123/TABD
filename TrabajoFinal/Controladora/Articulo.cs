@@ -24,10 +24,10 @@ namespace Controladora
                 {
                     Entidades.Articulo Articulo = new Entidades.Articulo
                     {
-                        ID          = item.ID,
-                        NOMBRE      = item.NOMBRE,
-                        PRECIO      = long.Parse(item.PRECIO.ToString()),
-                        STOCK       = item.STOCK,
+                        ID = item.ID,
+                        NOMBRE = item.NOMBRE,
+                        PRECIO = long.Parse(item.PRECIO.ToString()),
+                        STOCK = item.STOCK,
                         IDCATEGORIA = item.IDCATEGORIA,
                         IDPROVEEDOR = item.IDPROVEEDOR
                     };

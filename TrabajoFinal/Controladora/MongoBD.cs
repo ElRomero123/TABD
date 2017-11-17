@@ -19,8 +19,8 @@ namespace Controladora
             var filter = Builders<BsonDocument>.Filter.Eq("_id", ID);
             var result = coleccion.Find(filter).FirstOrDefault();
 
-            if(result != null)
-            { 
+            if (result != null)
+            {
                 resultados[0] = result["Nombre"] != null ? result["Nombre"].ToString() : string.Empty;
                 resultados[1] = result["Apellido"] != null ? result["Apellido"].ToString() : string.Empty;
                 resultados[2] = result["Comentarios"] != null ? result["Comentarios"].ToString() : string.Empty;
@@ -30,7 +30,7 @@ namespace Controladora
 
             else
             {
-                
+
             }
 
             return resultados;

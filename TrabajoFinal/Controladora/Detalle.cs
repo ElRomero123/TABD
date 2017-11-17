@@ -15,9 +15,9 @@ namespace Controladora
             bool resultado = false;
             try
             {
-                #pragma warning disable CS0618 // El tipo o el miembro están obsoletos
+#pragma warning disable CS0618 // El tipo o el miembro están obsoletos
                 AutoMapper.Mapper.CreateMap<Entidades.Detalle, Broker.DETALLE>();
-                #pragma warning restore CS0618 // El tipo o el miembro están obsoletos 
+#pragma warning restore CS0618 // El tipo o el miembro están obsoletos 
 
                 Broker.DETALLE objetoDetalle = AutoMapper.Mapper.Map<Broker.DETALLE>(detalle);
                 db.DETALLEs.Add(objetoDetalle);
@@ -42,7 +42,7 @@ namespace Controladora
                                 join e in db.PRODUCTOes
                                 on c.IDPRODUCTO equals e.ID
                                 where (c.IDVENTA == ID)
-                                select new {c.ID, c.CANTIDAD, c.TOTAL, c.IDVENTA, c.IDPRODUCTO, e.NOMBRE};
+                                select new { c.ID, c.CANTIDAD, c.TOTAL, c.IDVENTA, c.IDPRODUCTO, e.NOMBRE };
 
                 foreach (var item in resultado)
                 {
@@ -53,7 +53,7 @@ namespace Controladora
                         TOTAL = long.Parse(item.TOTAL.ToString()),
                         IDVENTA = item.IDVENTA,
                         IDPRODUCTO = item.IDPRODUCTO,
-                        ARTICULO = item.NOMBRE 
+                        ARTICULO = item.NOMBRE
                     };
 
                     lista.Add(Detalle);
@@ -66,5 +66,5 @@ namespace Controladora
             return lista;
         }
 
-    }   
+    }
 }

@@ -15,24 +15,24 @@ namespace Controladora
 
             var query = from m in db.CLIENTEs
                         where (m.ID == ID)
-                        select new {m.CONTRASENA};
+                        select new { m.CONTRASENA };
 
             foreach (var item in query)
-            {  
-                 string resultado = item.CONTRASENA;
-                 lista.Add(resultado);
+            {
+                string resultado = item.CONTRASENA;
+                lista.Add(resultado);
             }
 
             arreglo = lista.ToArray();
 
-            if(arreglo.Length > 0)
+            if (arreglo.Length > 0)
             {
                 if (arreglo[0] == Password)
                 {
                     answer = true;
                 }
             }
-          
+
             return answer;
         }
 

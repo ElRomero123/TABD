@@ -15,9 +15,9 @@ namespace Controladora
             bool resultado = false;
             try
             {
-                #pragma warning disable CS0618 // El tipo o el miembro están obsoletos
+#pragma warning disable CS0618 // El tipo o el miembro están obsoletos
                 AutoMapper.Mapper.CreateMap<Entidades.Venta, Broker.VENTA>();
-                #pragma warning restore CS0618 // El tipo o el miembro están obsoletos 
+#pragma warning restore CS0618 // El tipo o el miembro están obsoletos 
 
                 Broker.VENTA objetoVenta = AutoMapper.Mapper.Map<Broker.VENTA>(venta);
                 db.VENTAs.Add(objetoVenta);
@@ -43,7 +43,7 @@ namespace Controladora
                                 join e in db.CLIENTEs
                                 on c.IDCLIENTE equals e.ID
                                 where (c.ID == ID || ID == -1)
-                                select new {c.ID, c.FECHA, c.DESCUENTO, c.IDCLIENTE, e.NOMBRE};
+                                select new { c.ID, c.FECHA, c.DESCUENTO, c.IDCLIENTE, e.NOMBRE };
 
                 foreach (var item in resultado)
                 {
