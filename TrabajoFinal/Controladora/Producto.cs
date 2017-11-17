@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Controladora
 {
-    public class Articulo
+    public class Producto
     {
         private Broker.BDVentasOnlineEntities db = new Broker.BDVentasOnlineEntities();
 
-        public List<Entidades.Articulo> BuscarArticulo(long ID)
+        public List<Entidades.Producto> BuscarArticulo(long ID)
         {
-            List<Entidades.Articulo> lista = new List<Entidades.Articulo>();
+            List<Entidades.Producto> lista = new List<Entidades.Producto>();
 
             try
             {
@@ -22,7 +22,7 @@ namespace Controladora
 
                 foreach (var item in resultado)
                 {
-                    Entidades.Articulo Articulo = new Entidades.Articulo
+                    Entidades.Producto Articulo = new Entidades.Producto
                     {
                         ID = item.ID,
                         NOMBRE = item.NOMBRE,

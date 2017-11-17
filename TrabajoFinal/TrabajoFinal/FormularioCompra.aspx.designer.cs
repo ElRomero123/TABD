@@ -121,42 +121,6 @@ namespace TrabajoFinal {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvIDCliente;
         
         /// <summary>
-        /// Control BotonMismaFactura.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BotonMismaFactura;
-        
-        /// <summary>
-        /// Control Etiqueta5.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Etiqueta5;
-        
-        /// <summary>
-        /// Control CampoIDVenta1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CampoIDVenta1;
-        
-        /// <summary>
-        /// Control rfvIDVenta1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvIDVenta1;
-        
-        /// <summary>
         /// Control BotonNuevaFactura.
         /// </summary>
         /// <remarks>

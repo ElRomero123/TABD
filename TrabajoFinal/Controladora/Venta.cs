@@ -53,8 +53,7 @@ namespace Controladora
                         ID = item.ID,
                         FECHA = item.FECHA,
                         DESCUENTO = double.Parse(item.DESCUENTO.ToString()),
-                        IDCLIENTE = item.IDCLIENTE,
-                        CLIENTE = item.NOMBRE
+                        IDCLIENTE = item.IDCLIENTE
                     };
 
                     lista.Add(venta);

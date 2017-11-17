@@ -9,38 +9,11 @@ namespace TrabajoFinal
 
         }
 
-        protected void BotonMismaFactura_Click(object sender, EventArgs e)
-        {
-            bool resultado;
-            Controladora.Detalle controladora = new Controladora.Detalle();
-
-            Entidades.Detalle entidadDetalle = new Entidades.Detalle
-            {
-                CANTIDAD = long.Parse(CampoCantidad.Text),
-                TOTAL = long.Parse(CampoTotal.Text),
-                IDPRODUCTO = long.Parse(CampoIDProducto.Text),
-                IDVENTA = long.Parse(CampoIDVenta1.Text)
-            };
-
-            resultado = controladora.CrearDetalle(entidadDetalle);
-
-            if (resultado)
-            {
-                EtiquetaConfirmacion.Text = "Se ha realizado la compra en la factura " + CampoIDVenta1.Text;
-                EtiquetaConfirmacion.CssClass = "alert-success";
-            }
-
-            else
-            {
-                EtiquetaConfirmacion.Text = "No se pudo realizar la compra. ";
-                EtiquetaConfirmacion.CssClass = "alert-danger";
-            }
-        }
-
         protected void BotonNuevaFactura_Click(object sender, EventArgs e)
         {
             bool resultado;
             Controladora.Venta controladora = new Controladora.Venta();
+            Controladora.Detalle detalle = new Controladora.Detalle();
 
             Entidades.Venta entidadVenta = new Entidades.Venta
             {
@@ -50,9 +23,17 @@ namespace TrabajoFinal
                 IDCLIENTE = long.Parse(CampoIDCliente.Text)
             };
 
-            resultado = controladora.CrearVenta(entidadVenta);
+            Entidades.Detalle entidadDetalle = new Entidades.Detalle
+            {
+                CANTIDAD = long.Parse(CampoCantidad.Text),
+                TOTAL = long.Parse(CampoTotal.Text),
+                IDVENTA = long.Parse(CampoIDVenta2.Text),
+                IDPRODUCTO = long.Parse(CampoIDProducto.Text)
+            };
 
-            if(resultado)
+            resultado = controladora.CrearVenta(entidadVenta) && detalle.CrearDetalle(entidadDetalle);
+
+            if (resultado)
             {
                 EtiquetaConfirmacion.Text = "Se ha creado la factura. ";
                 EtiquetaConfirmacion.CssClass = "alert-success";

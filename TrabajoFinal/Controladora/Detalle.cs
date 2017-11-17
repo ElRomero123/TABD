@@ -52,8 +52,7 @@ namespace Controladora
                         CANTIDAD = long.Parse(item.CANTIDAD.ToString()),
                         TOTAL = long.Parse(item.TOTAL.ToString()),
                         IDVENTA = item.IDVENTA,
-                        IDPRODUCTO = item.IDPRODUCTO,
-                        ARTICULO = item.NOMBRE
+                        IDPRODUCTO = item.IDPRODUCTO
                     };
 
                     lista.Add(Detalle);

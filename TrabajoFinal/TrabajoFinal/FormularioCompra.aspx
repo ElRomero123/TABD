@@ -49,12 +49,6 @@
                     </div>
 
                     <div class="form-group">
-                            <asp:Button ID="BotonMismaFactura" runat="server" Text="Comprar con factura" CssClass="btn btn-primary" OnClick="BotonMismaFactura_Click"/>
-
-                            <asp:Label ID="Etiqueta5" runat="server" Text="ID venta: "></asp:Label>
-                            <asp:TextBox ID="CampoIDVenta1" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvIDVenta1" runat="server" ErrorMessage="Campo necesario!" ForeColor="Red" ControlToValidate="CampoIDVenta1" ValidationGroup="Admin"></asp:RequiredFieldValidator>
-
                             <asp:Button ID="BotonNuevaFactura" runat="server" Text="Generar nueva factura" CssClass="btn btn-primary" OnClick="BotonNuevaFactura_Click"/>
                             
                             <asp:Label ID="Etiqueta6" runat="server" Text="ID venta: "></asp:Label>

@@ -14,8 +14,8 @@ namespace TrabajoFinal
         {
             long.TryParse(CampoIDProducto.Text, out long ID);
                 ;
-            Controladora.Articulo controladora = new Controladora.Articulo();
-            List<Entidades.Articulo> lista = controladora.BuscarArticulo(ID);
+            Controladora.Producto controladora = new Controladora.Producto();
+            List<Entidades.Producto> lista = controladora.BuscarArticulo(ID);
             EtiquetaInformacionArticulos.Text = "Artículos encontrados.";
             gdvArticulos.DataSource = lista;
             gdvArticulos.DataBind();

@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="form-group">
-                                <asp:Button ID="BotonBuscarUsuario" runat="server" Text="Buscar usuario" CssClass="btn btn-primary" OnClick="BotonBuscarUsuario_Click"/>
+                                <asp:Button ID="BotonBuscarUsuario" runat="server" Text="Mostrar Usuarios" CssClass="btn btn-primary" OnClick="BotonBuscarUsuario_Click"/>
                                 <asp:Button ID="BotonBuscarComportamiento" runat="server" Text="Buscar comportamiento para este usuario" CssClass="btn btn-danger" OnClick="BotonBuscarComportamiento_Click"/> 
                                 <asp:Button ID="BotonLimpiar" runat="server" Text="Limpiar" CssClass="btn btn-primary" OnClick="BotonLimpiar_Click"/> 
                         </div>

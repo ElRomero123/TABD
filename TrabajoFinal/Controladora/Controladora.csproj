@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Articulo.cs" />
+    <Compile Include="Producto.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Detalle.cs" />
     <Compile Include="MongoBD.cs" />

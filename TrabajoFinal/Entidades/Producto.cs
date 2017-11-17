@@ -3,7 +3,7 @@
 namespace Entidades
 {
     [Serializable]
-    public class Articulo
+    public class Producto
     {
         public long ID { get; set; }
         public string NOMBRE { get; set; }
